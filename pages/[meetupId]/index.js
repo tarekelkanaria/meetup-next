@@ -9,7 +9,7 @@ function MeetupDetails({ meetupData }) {
         <title>{meetupData.title}</title>
         <meta name="description" content={meetupData.description} />
       </Head>
-      <MeetupDetail {...meetupData} />;
+      <MeetupDetail {...meetupData} />
     </>
   );
 }
