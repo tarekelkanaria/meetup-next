@@ -12,7 +12,7 @@ function HomePage({ meetups }) {
           content="discover new places and meet different people with amazing meetups app"
         />
       </Head>
-      <MeetupList meetups={meetups} />;
+      <MeetupList meetups={meetups} />
     </>
   );
 }
