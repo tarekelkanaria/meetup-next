@@ -15,11 +15,11 @@ async function handler(req, res) {
 
       console.log(result);
 
-      client.close();
       res.status(201).json({ message: "Meetup inserted successfully!" });
     } catch (error) {
-      client.close();
       res.status(400).json({ message: "Meetup insert failed" });
+    } finally {
+      client.close();
     }
   }
 }
